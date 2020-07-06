@@ -1,12 +1,12 @@
 # IS117Project
 This is part 4 of the IS117 final project
 
-This project is a resume website that includes the use of bootstrap html and css.
-The table below is the rubric given.
-resume page has working resume link at bottom
-all project cards link to actual github repo's
-all icons are linked to actual profiles
-writing on project was lorem ipsum mixed with actual writings
+This project is a resume website that includes the use of bootstrap html and css.<br>
+The table below is the rubric given.<br>
+resume page has working resume link at bottom<br>
+all project cards link to actual github repo's<br>
+all icons are linked to actual profiles<br>
+writing on project was lorem ipsum mixed with actual writings<br>
 
 | x    |          task           |
 |:----:|:-----------------------:|
