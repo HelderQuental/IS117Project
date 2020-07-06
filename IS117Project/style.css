@@ -1,0 +1,449 @@
+/*---- DEVELOPER: Helder Quental, IS117-450, Summer 2020 ----*/
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+       display: flex;
+    flex-direction: column;
+}
+/*----------Header CSS----------*/
+#header
+{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(imgs/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.user-box
+{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.user-box img
+{
+    border-radius: 50%;
+    widows: 250px;
+    border:2px solid #6caed5;
+}
+.user-box h1
+{
+    color: #fff;
+    font-weight: bold;
+    margin: 10px;
+}
+.user-box p
+{
+    color: #fff
+}
+.scroll-btn
+{
+    bottom: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #fff;
+    padding: 10px 10px 20px;
+    border-radius: 30px;
+}
+.scroll-bar span
+{
+    border: 2px solid #fff;
+    font-size: 10px;
+    border-radius: 30px;
+}
+.scroll-bar
+{
+    animation: mover 1s infinite alternate;
+}
+@keyframes mover
+{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(10px);}
+}
+.cards
+{   
+    color: #fff;
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px;
+   background-color: transparent;
+}
+.cards-body a i
+{
+    position: right;
+    font-size: 40px;
+    color: #000;
+    padding: 10px 30px;
+    
+}
+.cards-body
+{
+    width: 350px;
+    height: 300px;
+    padding-left: 50;
+}
+.cards-img-top
+{
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 30rempx;
+  height: 20rem; 
+}
+/*----------ABOUT-----------------*/
+.about
+{
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.profile-img
+{
+    height: 400px;
+}
+.nav-bar
+{
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+.navbar
+{
+    background-color: #000;
+}
+.nav-bar .fa-bars
+{
+    font-size: 35px;
+    color: #fff;
+}
+.navbar-toggler
+{
+    outline: none !important;
+}
+.navbar-nav
+{
+    float: right;
+    text-align: right;
+}
+.nav-link
+{
+    color: #fff !important;
+}
+p 
+{
+    margin:0; 
+    padding:0px 0px 10px 0px;
+}
+.tab 
+{
+    padding-right:30px;
+}
+.tab-left
+{
+    padding-left: 30px;
+}
+
+/*-------------skills bar----------------*/
+.skills
+{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress
+{
+    border-radius: 16px; !important;
+    margin-bottom: 10px;
+}
+.progress-bar
+{
+    border-radius: 16px;
+    background: #000 !important;
+}
+/*-----------Resume-----------*/
+.resume
+{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: #f9f9f9;
+}
+.resume h2
+{
+    margin-bottom: 50px;
+    
+}
+.timeline
+{
+    list-style-type: none;
+    position: relative;
+}
+.timeline:before
+{
+    content: '';
+    background: #555;
+    display:inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 1;
+}
+.timeline li
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: #fff;
+}
+.timeline li h4
+{
+    background-color: #000;
+    padding: 5px 0 5px 20px;
+    column-rule-color: #fff;
+    color: #fff;
+    font-size: 15px;
+}
+.timeline li:before
+{
+    content: '';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #000;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+.resume button
+{
+    float:left; 
+    margin-left:530px;
+    margin-top: -30px;
+    
+}
+/*------------Projects----------------*/
+.projects
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.projects h1
+{
+    
+    font-size: 34px;  
+        margin-bottom: 15px;
+}
+* {
+  box-sizing: border-box;
+}
+/*------------BootStrap code for cards---------*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/*----------card wrapping-----------*/
+.row
+{
+   
+    margin:20px 0;
+    width: 100%;
+}
+.card
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row .card
+{
+    margin: 40px;
+}
+/*---------------------Contact Form----------------------*/
+.contact h1
+{
+    padding-top: 50px;
+}
+
+form
+{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+    border: 2px solid lightgray;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.form-control
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 600px;
+    background: #fff;
+    border: none;
+    outline:none;
+    outline-color: #000;
+    border-bottom: 1px solid gray;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 16px;   
+}
+input
+{
+    height: 45px;
+}
+form .submit
+{
+    background: #000;
+    border-color: transparent;
+    color: #fff; 
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;    
+}
+form .submit:hover
+{
+    background-color: gray;
+    cursor: pointer;
+}
+
+/*-----------------Footer-------------------*/
+#footer
+{
+    
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(imgs/background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 30vh;
+    
+    
+}
+#footer p
+{
+    color: #fff;
+    line-height: 25px;
+    margin-top: auto;
+}
+#footer h2,h3
+{
+    color: #fff;
+}
+#footer h2
+{
+    font-size: 18px;
+}
+.footer-top
+{
+    padding-top: 80px 0;
+}
+.segment-one h3
+{
+    font-family: sans-serif;
+    color: #fff;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+.segment-two h2
+{
+   color: #999;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.segment-two h2:before
+{
+    content: '|';
+    color: #fff;
+    padding-right: 10px;
+}
+.segment-two ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.segment-two ul li
+{
+    line-height: 40px;
+    color: #fff;
+}
+.segment-two ul li a
+{
+    color: #fff;
+    text-decoration: none;
+}
+.segemt-three h2
+{
+   color: #999;
+    font-family: sans-serif;
+    text-transform: uppercase; 
+}
+.segment-three h2:before
+{
+    content: '|';
+    color: #fff;
+    padding-right: 10px;
+}
+.segment-three a
+{
+    background: #494848;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.segment-three a i
+{
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 12px;
+}
+.footer-bottom
+{
+    text-align: center;
+    background: #000;
+    line-height: 75px;
+    background-size: 80px;
+}
+.footer-top
+{
+    padding: 50px 0;
+}
+    
