@@ -35,15 +35,15 @@ writing on project was lorem ipsum mixed with actual writings
 |   x  |	Link: All links work   |
 |      |                         |
 |   x  |Nav: Basic navigation bar| 
-|       used on all pages with   | 
-|       dropdown                 |        
+|      |used on all pages with   | 
+|      |dropdown                 |        
 |      |                         |
 |   x  |Page: Contact form with  |
-|       several fields           |
-|       and submit button        |                 
+|      |several fields           |
+|      |and submit button        |                 
 |      |                         |
 |   x  |Page: Content written    |
-|       well / Lorem Ipsum used. |                       
+|      |well / Lorem Ipsum used. |                       
 |      |                         |
 |   x  |Page: Visually appealing |
 |      |color-background-contrast|
